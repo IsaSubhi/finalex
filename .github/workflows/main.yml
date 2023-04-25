@@ -3,11 +3,11 @@ name: final_exam
 on: 
   push:
     branches:
-    -master
+    - master
 jobs:
   my_job1:
     run-on: uuntu-latest
     steps:
-      -name: print hello world
-        run: echo "Hello World"
+    - name: print hello world
+      run: echo "Hello World"
       
