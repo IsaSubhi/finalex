@@ -1,0 +1,15 @@
+name: final_exam
+
+on: 
+  push:
+    branches:
+      - master
+jobs:
+
+  my_job1:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: print hello world
+      run: echo "Hello World"
