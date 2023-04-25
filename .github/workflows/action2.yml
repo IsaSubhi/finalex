@@ -26,7 +26,7 @@ jobs:
     
     steps:
     - name: git clone
-      run: actions/checkout@v1
+      uses: actions/checkout@v1
       
     - name: print files content
       run: ls -a
