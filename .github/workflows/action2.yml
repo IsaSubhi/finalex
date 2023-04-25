@@ -2,6 +2,7 @@ name: final_exam
 env:
   APP_NAME: "My_first_app"
   RELISE_NAME: "My_fist_app_version-${{ github.sha }}"
+  FIRS_NAME: "Subhi"
 
 on: 
   push:
@@ -31,3 +32,17 @@ jobs:
     - name: print files content
       run: sh ./test.sh
       shell: bash
+      
+  my_jib3:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: print name
+      run: echo "First name is ${{ env.FIRS_NAME }}"
+      
+     - name: print last name:
+     run: echo ${{ variables.LAST_NAME }}
+     
+    
+    - name: print phone number
+      run: echo ${{ secrets.PHONE }}
