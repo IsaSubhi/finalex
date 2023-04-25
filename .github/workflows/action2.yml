@@ -41,8 +41,8 @@ jobs:
       run: echo "First name is ${{ env.FIRS_NAME }}"
       
     - name: print last name
-      run: echo ${{ vars.LAST_NAME }}
+      run: echo "Last name is ${{ vars.LAST_NAME }}"
      
     
     - name: print phone number
-      run: echo ${{ secrets.PHONE }}
+      run: echo "Phone number is ${{ secrets.PHONE }}"
