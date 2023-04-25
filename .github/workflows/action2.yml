@@ -26,4 +26,4 @@ jobs:
     
     steps:
     - name: print files content
-    run: .\test.sh
+      run: ls -a
