@@ -11,9 +11,7 @@ jobs:
 
   my_job1:
     runs-on: ubuntu-latest
-    
     steps:
-    
     - name: print hello world
       run: echo "Hello World"
     
@@ -22,3 +20,10 @@ jobs:
       
     - name: show sha
       run: echo "Relise name ${{ env.RELISE_NAME }}"
+  
+  my_job2:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: print files content
+    run: .\test.sh
