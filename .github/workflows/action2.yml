@@ -33,15 +33,15 @@ jobs:
       run: sh ./test.sh
       shell: bash
       
-  my_jib3:
+  my_job3:
     runs-on: ubuntu-latest
     
     steps:
-    - name: print name
+    - name: print first name
       run: echo "First name is ${{ env.FIRS_NAME }}"
       
-     - name: print last name:
-     run: echo ${{ variables.LAST_NAME }}
+    - name: print last name
+      run: echo ${{ variables.LAST_NAME }}
      
     
     - name: print phone number
