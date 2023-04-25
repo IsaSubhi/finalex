@@ -25,5 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: git clone
+      run: actions/checkout@v1
+      
     - name: print files content
       run: ls -a
