@@ -29,4 +29,5 @@ jobs:
       uses: actions/checkout@v1
       
     - name: print files content
-      run: cat 1.txt
+      run: sh ./test.sh
+      shell: bash
