@@ -1,4 +1,6 @@
 name: final_exam
+env:
+  APP_NAME: "My_first_app"
 
 on: 
   push:
@@ -13,3 +15,6 @@ jobs:
     
     - name: print hello world
       run: echo "Hello World"
+    
+    - name: check version
+      run: uname -a
