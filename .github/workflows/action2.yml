@@ -1,6 +1,7 @@
 name: final_exam
 env:
   APP_NAME: "My_first_app"
+  RELISE_NAME: "My_fist_app_version-${{ github.sha }}"
 
 on: 
   push:
@@ -18,3 +19,6 @@ jobs:
     
     - name: check version
       run: lsb_release -a
+      
+    - name: show sha
+      run: echo "Relise name ${{ env.RELISE_NAME }}"
