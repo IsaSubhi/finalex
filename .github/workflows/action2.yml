@@ -3,7 +3,7 @@ name: final_exam
 on: 
   push:
     branches:
-      - master
+      - main
 jobs:
 
   my_job1:
